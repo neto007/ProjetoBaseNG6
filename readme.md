@@ -28,9 +28,9 @@ Para gerar um modulo e componente:
 ``` 
  * Agora com module criado voçê deve entrar no diretorio do mesmo e criar um componente:
 
- ```npm
+    ```npm
        ng6 new component nomedoComponetesCreate ./nomedoComponete-create -v
- ```
+```
 
 # Criar um Service
 
