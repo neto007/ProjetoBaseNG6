@@ -12,7 +12,7 @@ Links de Documentação Original
 - [How Instagram.com Works - Pete Hunt](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)
 
 
-# Como usar o Gerador de components
+# Como usar o Gerador de components NG6
 
 primeiro voçe deve instalar o componente NG6:  
 ```npm
@@ -20,15 +20,23 @@ primeiro voçe deve instalar o componente NG6:
 ```
 Para gerar um modulo e componente:
 
- * Voçe deve entrar dentro do diretorio  **cd App**.
- * Digitar: ng6 new module **Nome do Modulo** 
- * Agora com modulo criado voçê deve entrar no diretorio do mesmo.
+ * Voçê deve entrar dentro do diretorio  **cd App**.
 
-# Como usar o Gerador de components
+ * Digitar o Seguinte Comando para a Criação do Module: 
+   ```npm
+    ng6 new module Nome-do-Modulo 
+``` 
+ * Agora com module criado voçê deve entrar no diretorio do mesmo e criar um componente:
 
- * Crirar o componente __ng6 new component nomedoComponetesCreate ./nomedoComponete-create -v__
+  ```npm
+     ng6 new component nomedoComponetesCreate ./nomedoComponete-create -v
+  ```  
 
 # Criar um Service
 
-* entrar dentro da pasta services **cd services**
-* Aplicar o seguinte comando  __ng6 new service nomeDoService ./nomeDoService__
+* Entrar dentro da pasta services **cd services**
+* Aplicar o seguinte comando para que possa ser criado o modulo:
+
+   ```npm
+    ng6 new service nomeDoService ./nomeDoService
+``` 
