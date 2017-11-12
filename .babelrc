@@ -1,0 +1,15 @@
+//Transpilador de Js para Type-Escript 6
+//Teste altomatizado com Istanbul
+{
+    "presets": [
+        ["es2015", { "modules": false }]
+    ],
+    "plugins": [
+        "angularjs-annotate"
+    ],
+    "env": {
+        "test": {
+            "plugins": ["istanbul"]
+        }
+    }
+}

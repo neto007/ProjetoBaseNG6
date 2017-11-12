@@ -1,0 +1,65 @@
+<div class="{{::$ctrl.styles.default}}" layout="column" layout-align="center center"> 
+  <form name="novoUsuarioForm" novalidate>
+  
+    <md-card>
+      <md-card-title>
+        <h3 md-colors="{color:'primary'}" class="md-title">Adicionar novo usuário</h3>        
+      </md-card-title>
+      <md-card-content>
+        <p>Para adicionar um novo usuário (ou vincular um usuário existe), basta inserir o e-mail válido.
+          Sera enviado um e-mail para o usuário pedindo para criar uma nova conta ou vincular a uma conta
+          existe.
+        </p>
+      </md-card-content>
+      <md-card-actions layout="row" layout-align="end center">
+        <md-button>Entendi</md-button>
+      </md-card-actions>
+    </md-card>
+
+    <md-card>
+      <md-card-title>
+        <h2 class="md-title" md-colors="{color:'primary-600'}">Adicionando usuário ao estabelecimento {nome do estabelecimento}</h2>
+      </md-card-title>    
+
+    <div class="{{$ctrl.styles.textCenter}}">
+      <md-input-container flex="50">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" ng-model="$ctrl.novoUsuario.email" required>
+        <div ng-messages="novoUsuarioForm.email.$error">
+          <div ng-message="email">Você precisa informar um e-mail válido.</div>
+        </div>
+      </md-input-container>
+    </div>
+
+    <div class="{{$ctrl.styles.textCenter}} {{$ctrl.styles.permissions}}">
+        <p>Eventos</p>
+        <md-switch ng-model="novoUsuario.permissions.event.create" class="md-primary" aria-label="Criar novos eventos">
+          Criar novos eventos
+        </md-switch>
+        <md-switch ng-model="novoUsuario.permissions.event.edit" class="md-primary" aria-label="Criar novos eventos">
+          Editar eventos
+        </md-switch>
+
+        <p>Vouchers</p>
+        <md-switch ng-model="novoUsuario.permissions.voucher.create" class="md-primary" aria-label="Criar novos eventos">
+          Criar novos vouchers
+        </md-switch>
+
+        <md-switch ng-model="novoUsuario.permissions.voucher.edit" class="md-primary" aria-label="Criar novos eventos">
+          Editar vouchers
+        </md-switch>
+
+        <p>Estabelecimento</p>
+        <md-switch ng-model="novoUsuario.permissions.bussines.edit" class="md-primary" aria-label="Criar novos eventos">
+          Editar dados do estabelecimento
+        </md-switch>
+    </div>
+
+
+    <div flex="100" class="{{$ctrl.styles.buttonAdd}}">
+      <md-button ng-disabled="novoUsuarioForm.$invalid" type="submit" aria-label="Adicionar usuário" class="md-raised md-primary">Adicionar usuário</md-button>
+    </div>
+
+    </md-card>
+  </form>
+</div>

@@ -1,0 +1,17 @@
+<md-dialog aria-label="Desvincular Usuario">
+    <md-dialog-content>
+        <div class="md-dialog-content">
+            <h3 class="md-title">Deseja desvincular usuário?</h3>
+        </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+        <span flex></span>
+        <md-button ng-focus="true" ng-click="$ctrl.hide()">
+            NÃO
+        </md-button>
+        <md-button class={{::$ctrl.styles.botaoExcluir}} ng-click="$ctrl.excluir()">
+            SIM
+        </md-button>
+    </md-dialog-actions>
+</md-dialog>

@@ -1,0 +1,20 @@
+body {
+   height: 100%;
+   // browsers default to 16px for font-size,
+   // so setting top-level font-size to 62.5%
+   // scales 1rem to equal 10px.
+   font: 80% 'Roboto', sans-serif;
+}
+
+text-left {
+  text-align: left;
+}
+
+text-center {
+  text-align: center;
+}
+
+text-right {
+  text-align: right;
+}
+

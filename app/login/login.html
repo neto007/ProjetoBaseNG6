@@ -1,0 +1,41 @@
+<div layout="column" layout-align="center center" layout-fill="layout-fill">
+    <video loop muted autoplay poster="../../assets/images/festa.png" layout-fill="layout-fill" class="fullscreen-bg">
+        <source src="../../assets/images/videoFundo.mp4" type="video/mp4">
+    </video>
+    <div class="{{$ctrl.styles.loginBox}} md-whiteframe-z1" layout="column">
+        <md-toolbar>
+            <h2 class="md-toolbar-tools" layout-align="center center">
+                <span>LOGIN</span>
+            </h2>
+        </md-toolbar>
+        <md-content class="md-padding" layout="column">
+            <form name="loginForm" layout="column" ng-submit="$ctrl.login($event, loginForm.usuario.$viewValue, loginForm.senha.$viewValue)" >
+                <md-input-container>
+                    <label>E-mail</label>
+                    <input ng-model="$ctrl.loginForm.usuario" name="usuario" required type="email"/>
+                    <div ng-messages="loginForm.usuario.$error" style="color: red" role="alert">
+                        <div ng-message="required">É necessário preencher um email.</div>    
+                        <div ng-message="email">É necessário preencher um email.</div>
+                    </div>
+                </md-input-container>
+                <md-input-container>
+                    <label>Senha</label>
+                    <input ng-model="$ctrl.loginForm.senha" name="senha" type="password" required/>
+                    <div ng-messages="loginForm.senha.$error" style="color: red" role="alert">
+                        <div ng-message="required">É necessário preencher uma senha.</div>
+                    </div>
+                </md-input-container>
+            
+            <div layout="column">
+                <md-button type="submit" class="md-primary md-raised" ng-disabled="$ctrl.logging">{{ $ctrl.logging ? 'Entrando...' : 'Entrar' }}</md-button>
+            </div>
+            </form>
+            <div layout="row" layout-align="center center">
+                <md-button class="md-accent" md-colors="{color: 'teal-400'}" ui-sref="usuario-adm-create">Criar conta</md-button>
+                <div flex>
+                </div>
+                <md-button class="md-accent" md-colors="{color: 'red-400'}" ng-click="$ctrl.recuperarSenha()">Esqueceu sua senha?</md-button>
+            </div>
+        </md-content>
+    </div>
+</div>

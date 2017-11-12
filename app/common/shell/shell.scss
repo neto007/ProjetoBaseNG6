@@ -1,0 +1,45 @@
+.shell {
+    height: 100vh;
+    .md-toolbar-tools-bottom {
+        font-size: small;
+        & :last-child {
+            opacity: 0.8;
+        }
+    }
+    md-sidenav {
+        fill: #737373;
+        ng-md-icon {
+            position: relative;
+        }
+        .title-menu {
+            font-size: 15px;
+        }
+        .relative {
+            position: relative;
+        }
+    }
+    .user-avatar {
+        border-radius: 50px;
+        max-width: 80px;
+    }
+    .responsive-bar {
+        ng-md-icon {
+            fill: white;
+            margin-right: 20px;
+            margin-top: 5px;
+        }
+    }
+    .item-titulo-menu {
+        text-decoration: none;
+    }
+    .md-button.md-fab.md-fab-bottom-right {
+        top: auto;
+        right: 20px;
+        bottom: 20px;
+        left: auto;
+        position: fixed;
+    }
+    a:visited {
+        color: black;
+    }
+}

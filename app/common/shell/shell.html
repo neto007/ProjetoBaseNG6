@@ -1,0 +1,53 @@
+<div class="shell">
+
+    <md-toolbar hide-gt-sm class="responsive-bar">
+        <div class="md-toolbar-tools" layout="row">
+            <ng-md-icon ng-click="$ctrl.toggleLeftMenu($event)" md-ink-ripple icon="menu"></ng-md-icon>
+            <h2>Dashboard</h2>
+        </div>
+    </md-toolbar>
+    <div layout="row" class="main" layout-fill>
+        <md-sidenav md-component-id="menuLeft" md-is-locked-open="$mdMedia('gt-lg')" class="md-sidenav-left md-whiteframe-z2">
+            <md-toolbar>
+                <md-toolbar class="md-tall md-hue-2">
+                    <span flex></span>
+                    <div layout="column" class="md-toolbar-tools-bottom inset">
+                        <img class="user-avatar" flex src="{{ $ctrl.user.avatar }}" />
+                        <span></span>
+                        <div>{{ $ctrl.user.nome }}</div>
+                        <div>{{ $ctrl.user.email }}</div>
+                    </div>
+                </md-toolbar>
+            </md-toolbar>
+
+            <md-subheader>Gerenciar</md-subheader>
+            <md-list>
+                <md-item ng-repeat="item in $ctrl.menu">
+                    <a class="item-titulo-menu" ui-sref="{{ item.link }}">
+                        <md-item-content md-ink-ripple layout="row" layout-align="start center" class="relative">
+                            <div class="inset">
+                                <ng-md-icon icon="{{item.icon}}"></ng-md-icon>
+                            </div>
+                            <div class="inset title-menu">{{item.title}}
+                            </div>
+                        </md-item-content>
+                    </a>
+                </md-item>
+            </md-list>
+
+        </md-sidenav>
+
+        <div layout="column" layout-fill>
+            <md-toolbar hide-sm class="md-hue-1 md-medium-tall">
+                <div class="md-toolbar-tools">
+                    Dashboard
+                </div>
+            </md-toolbar>
+
+            <md-content layout-padding layout-aling="center center">
+                <ng-transclude></ng-transclude>
+            </md-content>
+        </div>
+    </div>
+
+</div>

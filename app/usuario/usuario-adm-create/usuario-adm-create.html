@@ -1,0 +1,62 @@
+<div layout="column" layout-align="center center" layout-fill="layout-fill">
+    <video loop muted autoplay poster="../../assets/images/festa.png" layout-fill="layout-fill" class="fullscreen-bg">
+        <source src="../../assets/images/videoFundo.mp4" type="video/mp4">
+    </video>
+
+  <div class="{{$ctrl.styles.loginBox}} md-whiteframe-z1" layout="column">
+    <md-toolbar>
+      <h2 class="md-toolbar-tools" layout-align="center center">
+          <span>CADASTRO</span>
+      </h2>
+    </md-toolbar>
+
+    <md-content class="md-padding" layout="column">
+      <form name="UsuarioAdmForm" layout="column" ng-submit="$ctrl.salvar(UsuarioAdmForm.$valid)" novalidate>              
+        <md-input-container>
+          <label>Nome</label>
+          <input ng-model="$ctrl.usuarioAdm.nome" name="nome" required minlength="3" maxlength="40" />
+
+          <div ng-messages="UsuarioAdmForm.nome.$error" style="color:red" role="alert">
+            <div ng-message="required">É necessário preencher um nome.</div>
+            <div ng-message="minlength">Nome deverá ter no mínimo 3 caracteres.</div>
+          </div>
+        </md-input-container>
+     
+        <md-input-container>
+          <label>E-mail</label>
+          <input type="email" ng-model="$ctrl.usuarioAdm.email" name="email" required/>
+
+          <div ng-messages="UsuarioAdmForm.email.$error" style="color:red" role="alert">
+            <div ng-message="required">É necessário preencher um email.</div>
+          </div>
+        </md-input-container>
+     
+        <md-input-container>
+          <label>Senha</label>
+          <input type="password" ng-model="$ctrl.usuarioAdm.senha" name="senha" required minlength="8" maxlength="16"/>
+
+          <div ng-messages="UsuarioAdmForm.senha.$error" style="color:red" role="alert">
+            <div ng-message="required">É necessário preencher uma senha.</div>
+            <div ng-message="minlength">Senha deverá ter de 8 a 16 caracteres.</div>
+          </div>
+        </md-input-container>
+   
+        <md-input-container>
+          <label>Confirmar Senha</label>
+          <input type="password" ng-model="$ctrl.usuarioAdm.confSenha" name="confSenha" required minlength="8" maxlength="16"/>
+
+          <div ng-messages="UsuarioAdmForm.confSenha.$error" style="color:red" role="alert">
+            <div ng-message="required">É necessário confirmar a senha.</div>
+            <div ng-message="minlength">Senha deverá ter de 8 a 16 caracteres.</div>
+          </div>
+        </md-input-container>
+
+        <div layout="row" layout-align="center center">
+          <md-button type="button" class="md-raised" ui-sref="login">Cancelar</md-button>
+          <md-button type="submit" class="md-primary md-raised">Salvar</md-button>
+        </div>
+      </form>
+
+    </md-content>
+  </div>
+</div>

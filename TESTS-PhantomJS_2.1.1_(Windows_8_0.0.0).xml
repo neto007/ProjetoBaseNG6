@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<testsuite name="PhantomJS 2.1.1 (Windows 8 0.0.0)" package="" timestamp="2017-07-12T01:02:07" id="0" hostname="DESKTOP-E4P6SCM" tests="34" errors="0" failures="0" time="0.039">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1"/>
+  </properties>
+  <testcase name="app Controller Should be constructed" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).app Controller"/>
+  <testcase name="Estabelecimento Service Testar findAll" time="0.005" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Estabelecimento Service"/>
+  <testcase name="Estabelecimento Service Testar findAll" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Estabelecimento Service"/>
+  <testcase name="Estabelecimento Service Testar findById" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Estabelecimento Service"/>
+  <testcase name="Estabelecimento Service Testar updateById" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Estabelecimento Service"/>
+  <testcase name="Estabelecimento Service Testar create" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Estabelecimento Service"/>
+  <testcase name="Evento Service Testar findAll" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Evento Service"/>
+  <testcase name="Evento Service Testar findById" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Evento Service"/>
+  <testcase name="Evento Service Testar updateById" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Evento Service"/>
+  <testcase name="Evento Service Testar create" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Evento Service"/>
+  <testcase name="Settings Service Obter URL da API" time="0.005" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Settings Service"/>
+  <testcase name="Settings Service Testar URL com endpoint" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Settings Service"/>
+  <testcase name="usuario Service Should be constructed usuario" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).usuario Service"/>
+  <testcase name="Voucher Service Testar findAll" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Voucher Service"/>
+  <testcase name="Voucher Service Testar findById" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Voucher Service"/>
+  <testcase name="Voucher Service Testar updateById" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Voucher Service"/>
+  <testcase name="Voucher Service Testar createById" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Voucher Service"/>
+  <testcase name="shell Controller Should be constructed" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).shell Controller"/>
+  <testcase name="dashboard Controller Should be constructed" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).dashboard Controller"/>
+  <testcase name="estabelecimento-create Controller Should be constructed" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).estabelecimento-create Controller"/>
+  <testcase name="estabelecimento-detail Controller Should be constructed" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).estabelecimento-detail Controller"/>
+  <testcase name="estabelecimento-edit Controller Should be constructed" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).estabelecimento-edit Controller"/>
+  <testcase name="estabelecimento-list Controller Should be constructed" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).estabelecimento-list Controller"/>
+  <testcase name="evento-create Controller Should be constructed" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).evento-create Controller"/>
+  <testcase name="evento-detail Controller Should be constructed" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).evento-detail Controller"/>
+  <testcase name="evento-list Controller Should be constructed" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).evento-list Controller"/>
+  <testcase name="evento-view-edit Controller Should be constructed" time="0.002" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).evento-view-edit Controller"/>
+  <testcase name="evento-view Controller Should be constructed" time="0" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).evento-view Controller"/>
+  <testcase name="login Controller Should be constructed" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).login Controller"/>
+  <testcase name="usuario-create Controller Should be constructed" time="0.002" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).usuario-create Controller"/>
+  <testcase name="usuario-list Controller Should be constructed" time="0.002" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).usuario-list Controller"/>
+  <testcase name="voucher-create Controller Should be constructed" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).voucher-create Controller"/>
+  <testcase name="voucher-list Controller Should be constructed" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).voucher-list Controller"/>
+  <testcase name="voucher-remove Controller Should be constructed" time="0.001" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).voucher-remove Controller"/>
+  <system-out>
+    <![CDATA[PhantomJS 2.1.1 (Windows 8 0.0.0) LOG: 'application loading...'
+,PhantomJS 2.1.1 (Windows 8 0.0.0) LOG: Object{}
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

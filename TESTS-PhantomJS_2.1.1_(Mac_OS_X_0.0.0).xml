@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<testsuite name="PhantomJS 2.1.1 (Mac OS X 0.0.0)" package="" timestamp="2017-11-12T15:05:36" id="0" hostname="Mac-Pro-de-Mac-Pro.local" tests="12" errors="0" failures="1" time="0.003">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1"/>
+  </properties>
+  <testcase name="app Controller Should be constructed" time="0.001" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).app Controller"/>
+  <testcase name="request Service Should be constructed" time="0" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).request Service"/>
+  <testcase name="Settings Service Obter URL da API" time="0" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).Settings Service"/>
+  <testcase name="Settings Service Testar URL com endpoint" time="0" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).Settings Service"/>
+  <testcase name="usuario Service Should be constructed usuario" time="0" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).usuario Service"/>
+  <testcase name="viacep Service Should be constructed" time="0" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).viacep Service"/>
+  <testcase name="shell Controller Should be constructed" time="0.001" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).shell Controller">
+    <failure type="">undefined is not an object (evaluating 'LoginService.getUserBasicData')
+_class@webpack:///app/common/shell/shell.controller.js:8:29 &lt;- spec.bundle.js:10270:29
+webpack:///app/common/shell/shell.controller.spec.js:7:23 &lt;- spec.bundle.js:114247:116
+</failure>
+  </testcase>
+  <testcase name="dashboard Controller Should be constructed" time="0" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).dashboard Controller"/>
+  <testcase name="login Controller Should be constructed" time="0" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).login Controller"/>
+  <testcase name="usuario-adm-create Controller Should be constructed" time="0" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).usuario-adm-create Controller"/>
+  <testcase name="usuario-create Controller Should be constructed" time="0.001" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).usuario-create Controller"/>
+  <testcase name="usuario-list Controller Should be constructed" time="0" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).usuario-list Controller"/>
+  <system-out>
+    <![CDATA[PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: 'application loading...'
+,PhantomJS 2.1.1 (Mac OS X 0.0.0) LOG: Object{}
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
