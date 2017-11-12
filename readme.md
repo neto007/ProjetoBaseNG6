@@ -23,13 +23,13 @@ Para gerar um modulo e componente:
  * Voçê deve entrar dentro do diretorio  **cd App**.
 
  * Digitar o Seguinte Comando para a Criação do Module: 
-   ```npm
+ ```npm
     ng6 new module Nome-do-Modulo 
-``` 
+ ``` 
  * Agora com module criado voçê deve entrar no diretorio do mesmo e criar um componente:
 
-    ```npm
-       ng6 new component nomedoComponetesCreate ./nomedoComponete-create -v
+```npm
+    ng6 new component nomedoComponetesCreate ./nomedoComponete-create -v
 ```
 
 # Criar um Service
@@ -37,6 +37,6 @@ Para gerar um modulo e componente:
 * Entrar dentro da pasta services **cd services**
 * Aplicar o seguinte comando para que possa ser criado o modulo:
 
-   ```npm
+```npm
     ng6 new service nomeDoService ./nomeDoService
 ``` 
